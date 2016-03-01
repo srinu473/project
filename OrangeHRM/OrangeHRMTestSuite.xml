@@ -1,0 +1,9 @@
+<suite name="OrangeHRM Project Test Suit" parallel="none">
+  <test name="OrangeHRM Project Test">
+    <classes>
+      <class name="com.orangeHRM.testsuite.LoginTest"/>
+      <class name="com.orangeHRM.testsuite.AddEmployeeTest"/>
+      <class name="com.orangeHRM.testsuite.LogoutTest"/> 
+    </classes>
+  </test> 
+</suite>

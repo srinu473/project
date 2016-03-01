@@ -1,0 +1,15 @@
+package MyPracticeScripts;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirefoxLaunch {
+
+	public static void main(String[] args) 
+	{
+		int r=10;
+		//FirefoxDriver driver=new FirefoxDriver();
+		System.out.println(r);
+
+	}
+
+}

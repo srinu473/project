@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CalanderOperations.java&apos; to &apos;MavenProject/src/test/java/com.Orange&apos;&#x0D;&#x0A;- Original project: &apos;MyAntProject&apos;&#x0D;&#x0A;- Destination element: &apos;MavenProject/src/test/java/com.Orange&apos;&#x0D;&#x0A;- Original element: &apos;ScriptsPractice.CalanderOperations.java&apos;" description="Copy compilation unit" destination="=MavenProject/src\/test\/java&lt;com.Orange" element1="/src&lt;ScriptsPractice{CalanderOperations.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1455702850388" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+
+<suite name="NewTours" parallel="none">
+  <test name="mytest">
+    <classes>
+     
+      <class name="FrameworkScripts.Extends.Login"/>
+      <class name="FrameworkScripts.Extends.Flightdetails"/> 
+	   <class name="FrameworkScripts.Extends.selectflight"></class>
+      <class name="FrameworkScripts.Extends.BookAFlight"/> 
+	  <class name="FrameworkScripts.Extends.flightconformation"/>
+ <!--  <class name="FrameworkScripts.Extends.logout"/> -->
+    </classes>
+  </test> 
+</suite> 

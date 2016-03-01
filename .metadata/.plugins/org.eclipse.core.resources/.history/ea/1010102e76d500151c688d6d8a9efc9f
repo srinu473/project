@@ -1,0 +1,33 @@
+package flipkart;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+
+import com.mysql.jdbc.Driver;
+
+public class launch {
+
+	public static void main(String[] args) 
+	{
+	WebDriver d=new FirefoxDriver();
+	d.get("http://www.flipkart.com/");
+	Sleeper.sleepTightInSeconds(2);
+	d.findElement(By.id("fk-top-search-box")).sendKeys("i");
+	Sleeper.sleepTightInSeconds(3);
+	d.findElement(By.xpath("//li[@class='ac_over']")).click();
+	//d.findElement(by.)
+	WebElement mobile=d.findElement(By.xpath("//*[@id='fk-mainbody-id']/div/div[9]/div/div[2]/div/div/div[1]/div[1]/div/img[1]"));
+	Actions action=new Actions(d);
+	action.moveToElement(mobile).build().perform();
+	      	
+	
+	
+	}
+
+}

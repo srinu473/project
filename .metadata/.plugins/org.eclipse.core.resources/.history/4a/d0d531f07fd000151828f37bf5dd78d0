@@ -1,0 +1,38 @@
+package MyPracticeScripts;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SkipHiddenLinks {
+
+	public static void main(String[] args)
+	{
+		FirefoxDriver d=new FirefoxDriver();
+		d.get("http://google.com");
+        List<WebElement> links=d.findElements(By.tagName("a"));
+        int tl=links.size();
+        System.out.println("Total links    "+tl);
+        int c=0;
+        for (int i = 0; i < tl; i++) 
+        {
+		if (links.get(i).isDisplayed())
+		{
+		   	System.out.println(links.get(i).getText());
+		   	links.get(i).click();
+		   	d.navigate().back();
+		   	
+		   
+		   	c++;
+		   	
+		}
+		
+        }
+    	links=d.findElements(By.tagName("a"));
+        System.out.println("Visible Links   "+c);
+        System.out.println("HiddenLinks   "+(tl-c));
+	}
+
+}

@@ -1,0 +1,17 @@
+<project name="my ant build" default="build">
+<target name="clean">
+ <delete dir="D:\sree\MyProject\build"/>
+ </target>
+ <target name="init" depends="clean">
+ <mkdir dir="D:\sree\MyProject\build"/>
+ <mkdir dir="D:\sree\MyProject\build\classes"/>
+ <mkdir dir="D:\sree\MyProject\build\Jarfiles"/>
+ </target>
+ <target name="compile" depends="init">
+  <javac srcdir="D:\sree\MyProject\OrangeHRM\src" destdir="D:\sree\MyProject\build\classes" classpath="D:\sree\MyProject\MyScripts\lib\selenium-server-standalone-2.51.0.jar"/>
+</target>
+<target name="build" depends="compile">
+	<jar destfile="D:\sree\MyProject\build\Jarfiles\mywebdriverscripts.jar" basedir="D:\sree\MyProject\build\classes"/>
+</target>
+			
+</project>

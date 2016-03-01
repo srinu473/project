@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NewTours]" parallel="none">
+  <test name="mytest">
+    <classes>
+      <class name="FrameworkScripts.Extends.Login"/>
+      <class name="FrameworkScripts.Extends.Flightdetails"/>
+      <class name="FrameworkScripts.Extends.selectflight"/>
+      <class name="FrameworkScripts.Extends.BookAFlight"/>
+      <class name="FrameworkScripts.Extends.flightconformation"/>
+    </classes>
+  </test> <!-- mytest -->
+</suite> <!-- Failed suite [NewTours] -->

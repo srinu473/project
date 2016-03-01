@@ -1,0 +1,19 @@
+package flipkart;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.mysql.jdbc.Driver;
+
+public class launch {
+
+	public static void main(String[] args) 
+	{
+	WebDriver d=new FirefoxDriver();
+	d.get("http://flipkart.com");
+	d.findElement(By.id("fk-top-search-box")).sendKeys("i");
+	
+	}
+
+}
